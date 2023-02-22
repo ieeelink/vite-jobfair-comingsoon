@@ -6,16 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploying to surge
     steps:
-      - name: Install Node.js
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - name: Build Page with Vite
-        run: npm run build
-      - name: Install Surge
-        run: npm install --global surge
-      - name: Run surge
-        run: >-
-          surge ./dist vite-jobfair-comingsoon.surge.sh --token ${{
-          secrets.SURGE_TOKEN }}
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install --location=global surge
+    - run: npm run build
+    - run: surge --project ./dist --domain https://vite-jobfair-comingsoon.surge.sh --token ${{ secrets.SURGE_TOKEN }}
