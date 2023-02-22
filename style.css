@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background: url("./BG.png") no-repeat center center fixed;
+  background-size: cover;
+}
