@@ -11,5 +11,6 @@ jobs:
       with:
         node-version: 16
     - run: npm install --location=global surge
+    - run: npm install
     - run: npm run build
     - run: surge --project ./dist --domain https://vite-jobfair-comingsoon.surge.sh --token ${{ secrets.SURGE_TOKEN }}
