@@ -1,13 +1,17 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
-* {
-    box-sizing: border-box;
-  }
-  
   body{
-    background: url("/BG.png") no-repeat center center fixed;
-    background-size: cover;
     font-family: 'Poppins', sans-serif;
   }
-  
+  .hero{
+    background: url("/BG.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar{
+    width: 100%;
+  }
