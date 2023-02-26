@@ -1,40 +1,7 @@
 
-.section-title {
-  margin-bottom: 60px;
-  p {
-    color: #777;
-    font-size: 16px;
-  }
-  h4 {
-    text-transform: capitalize;
-    font-size: 40px;
-    position: relative;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    &:before {
-      position: absolute;
-      content: "";
-      width: 60px;
-      height: 2px;
-      background-color: white;
-      bottom: 0;
-      left: 50%;
-      margin-left: -30px;
-    }
-    &:after {
-      position: absolute;
-      background-color: white;
-      content: "";
-      width: 10px;
-      height: 10px;
-      bottom: -4px;
-      left: 50%;
-      margin-left: -5px;
-      border-radius: 50%;
-    }
-  }
-}
+@import "./variables.scss";
+
+
 ul {
   &.timeline-list {
     position: relative;
@@ -73,7 +40,7 @@ ul {
         content: "";
         width: 25px;
         height: 25px;
-        background-color: #ff3636;
+        background-color: $accent-color;
         left: 50%;
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
@@ -94,7 +61,6 @@ ul {
   span {
     font-size: 18px;
     font-weight: 500;
-    font-family: poppins;
-    color: #ff3636;
+    color: $accent-color;
   }
 }
