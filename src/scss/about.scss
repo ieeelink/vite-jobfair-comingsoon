@@ -1,0 +1,28 @@
+.partner-logo {
+  width: 60%;
+  height: auto;
+  transition: filter 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.logo {
+  min-width: 306px;
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo:hover .partner-logo {
+  filter: grayscale(0%);
+}
+
+.partner-logo {
+    width: 60%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo:hover .partner-logo {
+    transform: scale(1.1);
+  }
