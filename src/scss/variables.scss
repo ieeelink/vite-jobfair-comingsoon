@@ -2,6 +2,15 @@ $accent-color: #FC862B;
 $primary-color: #1D1D1D;
 
 $tertiary-color: #ff3636;
-$body-bg: #fafafa;
+$body-bg: #030303;
 
-$dimmed-accent-color: rgba($accent-color, 0.1);
+$text-color: rgba(224, 224, 224, 0.842);
+$card-bg:#111111;
+
+$highlight: #5bc0eb;
+$darkhighlight: #fde74c;
+
+$oled-accent:rgba($accent-color, 0.01);
+
+$accent-gradient-dark:  radial-gradient(circle, rgba(0,0,0,1) 61%, rgba(252,134,43,0.05) 100%);
+
