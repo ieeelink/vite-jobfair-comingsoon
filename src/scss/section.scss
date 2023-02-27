@@ -40,7 +40,7 @@ ul {
         content: "";
         width: 25px;
         height: 25px;
-        background-color: $accent-color;
+        background-color: $tertiary-color;
         left: 50%;
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
@@ -61,6 +61,6 @@ ul {
   span {
     font-size: 18px;
     font-weight: 500;
-    color: $accent-color;
+    color: $tertiary-color;
   }
 }
