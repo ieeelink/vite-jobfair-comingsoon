@@ -10,16 +10,17 @@
       font-family: "Open Sans", sans-serif;
       font-size: 7rem;
       max-width: 600px;
+      font-weight: 800;
     }
     h1:nth-child(1) {
       color: transparent;
-      -webkit-text-stroke: 1px $accent-color;
+      -webkit-text-stroke: 2px $accent-color;
     }
     h1:nth-child(2) {
       position: absolute;
       top: 0;
       color: #ffffff;
-      -webkit-text-stroke: 1px #ffffff;
+      -webkit-text-stroke: 2px #ffffff;
       animation: wave 5s linear infinite;
     }
 

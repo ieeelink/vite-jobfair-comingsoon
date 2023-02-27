@@ -7,10 +7,11 @@
 @import "./about.scss";
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $body-bg;
+  color: $text-color;
 }
 .navbar {
   width: 100%;
@@ -24,9 +25,7 @@ body {
 .max-w-prose {
   max-width: 65ch;
 }
-.bg-accent {
-  background-color: $dimmed-accent-color;
-}
+
 
 
 .card {
@@ -40,19 +39,24 @@ body {
     transform: scale(1.1);
     transition: box-shadow 0.3s ease-in-out;
   }
+  //darker bg
+  background-color: $card-bg;
+  .card-title{
+    color: $tertiary-color;
+  }
+}
+
+.bg-accent{
+  background: $accent-gradient-dark;
 }
 
 .title {
-  margin-bottom: 60px;
   p {
     color: #777;
     font-size: 16px;
   }
   h4 {
-    text-transform: capitalize;
-    font-size: 40px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    font-size: 3rem;
     font-weight: 600;
     position: relative;
   &:before{
@@ -62,8 +66,8 @@ body {
     height: 2.45em;
     left: 0;
     width: 60px;
-    z-index: -10;
-    background-image: url("/underline.svg");
+    z-index: 10;
+    background-image: url("/Vector.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -73,12 +77,10 @@ body {
     position: absolute;
     width: 100%;
     height: 2.45em;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 5em;
+    left: 0;
     top: 5px;
-    z-index: -10;
-    background-image: url("/underline.svg");
+    z-index: 10;
+    background-image: url("/Vector.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
