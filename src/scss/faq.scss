@@ -1,7 +1,11 @@
 $color_1: #444444;
 $color_2: #4154f1;
+$tertiary-color: #ff3636;
+
 
 .faq {
+    margin-bottom: 2rem;
+    
     
     .accordion-item {
         border: 0;
@@ -9,36 +13,50 @@ $color_2: #4154f1;
         &:not(:last-child) {
             margin-bottom: 30px;
         }
-        &:not(h2){
-            background-color: #4154f1;
-        }
+        
+       
     }
 	.accordion-collapse {
 		border: 0;
+        background-color: #4154f1;
         
 	}
-    .accordion-collapse{
-        background-color: #444444;
-    }
+    
 	.accordion-button {
 		padding: 15px 15px 20px 0;
 		font-weight: 600;
 		border: 0;
 		font-size: 18px;
-		color: $color_1;
+		color: beige;
 		text-align: left;
 		&:focus {
 			box-shadow: none;
 		}
-		&:not(.collapsed) {
-			background: none;
-			color: $color_2;
+		&.collapsed {
+			background:black;
+			color: $tertiary-color;
 			border-bottom: 0;
+            border-color: #ff3636;
 		}
+        &:not(.collapsed) {
+            background: black;
+            color: $tertiary-color;
+            border-bottom: 0;
+            border-color: #ff3636;
+            
+        }
+        &::after{
+            color: $tertiary-color;
+            
+        }
+
 	}
 	.accordion-body {
 		padding: 0 0 25px 0;
 		border: 0;
+        background-color: black;
+        color: #ffff;
 	}
+    
     
 }
