@@ -1,0 +1,44 @@
+$color_1: #444444;
+$color_2: #4154f1;
+
+.faq {
+    
+    .accordion-item {
+        border: 0;
+        background: black;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        &:not(h2){
+            background-color: #4154f1;
+        }
+    }
+	.accordion-collapse {
+		border: 0;
+        
+	}
+    .accordion-collapse{
+        background-color: #444444;
+    }
+	.accordion-button {
+		padding: 15px 15px 20px 0;
+		font-weight: 600;
+		border: 0;
+		font-size: 18px;
+		color: $color_1;
+		text-align: left;
+		&:focus {
+			box-shadow: none;
+		}
+		&:not(.collapsed) {
+			background: none;
+			color: $color_2;
+			border-bottom: 0;
+		}
+	}
+	.accordion-body {
+		padding: 0 0 25px 0;
+		border: 0;
+	}
+    
+}
