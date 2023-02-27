@@ -13,6 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: $body-bg;
   color: $text-color;
+  overflow-x: hidden;
 }
 .navbar {
   width: 100%;
