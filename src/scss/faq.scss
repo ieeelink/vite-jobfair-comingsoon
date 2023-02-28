@@ -5,58 +5,68 @@ $tertiary-color: #ff3636;
 
 .faq {
     margin-bottom: 4rem;
+	.accordion,.accordion-flush{
+		border: none;
+	}
     
     
     .accordion-item {
-        border: 0;
         background: black;
         &:not(:last-child) {
             margin-bottom: 30px;
         }
-        
-       
+        box-shadow: none;
+       border: none;
     }
 	.accordion-collapse {
-		border: 0;
         background-color: #4154f1;
-        
 	}
     
 	.accordion-button {
-		padding: 15px 15px 20px 0;
+		padding: 15px 15px 20px 15px;
 		font-weight: 600;
-		border: 0;
-		font-size: 18px;
+		font-size: 1.2rem;
 		color: beige;
 		text-align: left;
+		background: black;
+		border: 0.5px solid #ff3636;
 		&:focus {
 			box-shadow: none;
 		}
 		&.collapsed {
 			background:black;
 			color: $tertiary-color;
-			border-bottom: 0;
-            border-color: #ff3636;
+            border-color: $tertiary-color;
 		}
         &:not(.collapsed) {
             background: black;
             color: $tertiary-color;
-            border-bottom: 0;
-            border-color: #ff3636;
+            border-color: $tertiary-color;
+			box-shadow: none;
             
         }
         &::after{
             color: $tertiary-color;
 
         }
+		&:hover {
+			background: $tertiary-color;
+			color: black;
+		}
 
 	}
 	.accordion-body {
-		padding: 0 0 25px 0;
-		border: 0;
+		padding:1.5rem 0;
         background-color: black;
         color: #ffff;
+		font-size: 1.1rem;
+		border: 0;
+		box-shadow: none;
 	}
     
-    
+	&:focus {
+		outline: 0 !important;
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+	  }
+	  
 }
