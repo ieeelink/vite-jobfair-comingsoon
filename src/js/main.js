@@ -12,3 +12,19 @@ VanillaTilt.init(document.querySelectorAll(".card,.timeline_content"), {
   glare: true,
   "max-glare": 0.5,
 });
+
+const fadedEl = document.querySelectorAll(".card,.timeline_content");
+
+const myObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fadeIn");
+      }
+    });
+  },
+  { threshold: [0.5] }
+);
+fadedEl.forEach((el) => {
+  myObserver.observe(el);
+});
