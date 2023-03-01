@@ -1,8 +1,13 @@
 .hero{
+    background: url('/BG.png');
+    background: -webkit-image-set(
+      url('/BG.webp') type('image/webp'),
+      url('/BG.png') type('image/png'));
     background: image-set(
       url('/BG.webp') type('image/webp'),
       url('/BG.png') type('image/png')
-    ) no-repeat center center fixed;
+    )
+    no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
