@@ -6,6 +6,9 @@ import VanillaTilt from "vanilla-tilt";
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
 
+// Import FontSource for Open Sans
+import "@fontsource/open-sans";
+
 VanillaTilt.init(document.querySelectorAll(".card,.timeline_content"), {
   max: 2,
   speed: 10,
