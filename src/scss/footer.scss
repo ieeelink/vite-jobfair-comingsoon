@@ -1,8 +1,8 @@
 $color_1: #fff;
 $color_2: rgba(255, 255, 255, 0.5);
-$color_3: #12c2e9;
+$color_3: #ff3636;
 $font-family_1: "Poppins", sans-serif;
-$background-color_1: #111;
+$background-color_1: #080808;
 
 #footer {
 	font-size: 14px;
@@ -13,7 +13,7 @@ $background-color_1: #111;
 	.footer-top {
 		padding: 3rem 0rem;
 		padding-bottom: 1rem;
-		background: #1D1D1D;
+		background: #161616;
 		.footer-info {
 			h3 {
 				font-size: 18px;
@@ -32,7 +32,7 @@ $background-color_1: #111;
 			a {
 				font-size: 18px;
 				display: inline-block;
-				background: #18191d;
+				background: #030303;
 				color: $color_3;
 				line-height: 1;
 				padding: 8px 0;
@@ -124,7 +124,7 @@ $background-color_1: #111;
 			align-items: center;
 			margin-left: auto;
 			a {
-				background: linear-gradient(to right, #18191d, #18191d);
+				background: linear-gradient(to left, #030303, #18191d);
 				margin: 0rem 0.2rem;
 				width: 1.85rem;
 				height: 1.85rem;
@@ -138,8 +138,6 @@ $background-color_1: #111;
 					left: 50%;
 					top: 50%;
 					transform: translate(-50%, -50%);
-					width: 1rem;
-					height: 1rem;
 				}
 				&:hover {
 					background: linear-gradient(to right, #FC862B, #f64f59);
