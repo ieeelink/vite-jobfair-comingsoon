@@ -66,6 +66,7 @@ $background-color_1: #080808;
 				i {
 					padding-right: 0.25rem;
 					background: linear-gradient(to right, #FC862B, #f64f59);
+					background-clip: text;
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: transparent;
 					font-size: 1rem;
