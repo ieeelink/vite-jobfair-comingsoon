@@ -1,5 +1,8 @@
+@import "mixin.scss";
 .hero{
-    background: url("/BG.png") no-repeat center center fixed;
+  @include webp-background($img: 'BG');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     height: 100vh;
     display: flex;

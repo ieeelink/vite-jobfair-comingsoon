@@ -1,0 +1,12 @@
+@mixin webp-background($img, 
+    $color: transparent,
+    $repeat: repeat,
+    $attachment: scroll,
+    $position: center,
+    $size: auto,
+    $type: ".png") {
+ background: $color url("/#{$img}.webp") $repeat $attachment $position / $size;
+ .no-webp & {
+ background-image: url("/#{$img}#{$type}");
+ }
+}
