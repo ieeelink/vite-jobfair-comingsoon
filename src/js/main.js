@@ -31,3 +31,14 @@ const myObserver = new IntersectionObserver(
 fadedEl.forEach((el) => {
   myObserver.observe(el);
 });
+
+var navbar = document.querySelector(".navbar");
+document.addEventListener("scroll", function () {
+  if (window.scrollY > 0) {
+    navbar.classList.add("bg-black");
+    navbar.classList.add("bg-opacity-50");
+  } else {
+    navbar.classList.remove("bg-black");
+    navbar.classList.remove("bg-opacity-50");
+  }
+});

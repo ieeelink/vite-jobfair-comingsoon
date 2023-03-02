@@ -10,11 +10,12 @@
     justify-content: center;
     align-items: center;
     .arrow{
+      transform: scale(0.6);
       position: absolute;
       bottom: 5%;
       left: 50%;
       &:hover{
-        transform: translateY(-10px);
+        transform: scale(0.6) translateY(-10px);
         transition: transform .2s ease-in-out;
       }
     }
