@@ -61,6 +61,10 @@
   transition: transform 0.3s ease-in-out;
 }
 
+.scale-small{
+  width: 40%;
+}
+
 .logo:hover .partner-logo {
   transform: scale(1.1);
 }
